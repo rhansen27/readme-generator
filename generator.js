@@ -42,6 +42,21 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "installation",
+    message: "What are the steps of installing or using your project?",
+    validate: (installation) => {
+      if (installation) {
+        return true;
+      } else {
+        console.log(
+          "Please provide valid inforation for installation or usage of your project."
+        );
+        return false;
+      }
+    },
+  },
 ];
 
 function init() {
