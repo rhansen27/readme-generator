@@ -57,6 +57,50 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "use",
+    message: "What is the purpose of your project?",
+    validate: (use) => {
+      if (use) {
+        return true;
+      } else {
+        console.log("Please provide a valid purpose for your project.");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "contribution",
+    message: "How cant others contribute to your project if they would like?",
+    validate: (contribution) => {
+      if (contribution) {
+        return true;
+      } else {
+        console.log(
+          "Please provide valid information on how other people can contribute to your project."
+        );
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "testing",
+    message:
+      "What are the steps to test your project to make sure that it is working properly?",
+    validate: (testing) => {
+      if (testing) {
+        return true;
+      } else {
+        console.log(
+          "Please provide valid information on how to test your project."
+        );
+        return false;
+      }
+    },
+  },
 ];
 
 function init() {
