@@ -101,6 +101,32 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "username",
+    message: "What is your GitHub username?",
+    validate: (username) => {
+      if (username) {
+        return true;
+      } else {
+        console.log("Please provide a valid GitHub username.");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is the best email address to contact you at?",
+    validate: (email) => {
+      if (email) {
+        return true;
+      } else {
+        console.log("Please provide a valid email address.");
+        return false;
+      }
+    },
+  },
 ];
 
 function init() {
