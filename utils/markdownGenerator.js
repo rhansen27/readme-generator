@@ -33,3 +33,31 @@ function getLicenseBadge(license) {
 
   return badge;
 }
+
+function getLicenseLink(license) {
+  let link = "";
+  switch (license) {
+    case "MIT":
+      link = "https://opensource.org/licenses/MIT";
+      break;
+    case "Apache 2.0":
+      link = "https://opensource.org/licenses/Apache-2.0";
+      break;
+    case "GPL 3.0":
+      link = "https://www.gnu.org/licenses/gpl-3.0";
+      break;
+    case "BSD 3":
+      link = "https://opensource.org/licenses/BSD-3-Clause";
+      break;
+    case "None":
+      link = "";
+      break;
+    case "Other":
+      link = "";
+      break;
+    default:
+      link = "";
+      break;
+  }
+  return link;
+}
