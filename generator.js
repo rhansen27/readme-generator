@@ -119,10 +119,12 @@ const questions = [
     name: "email",
     message: "What is the best email address to contact you at?",
     validate: (email) => {
-      if (email) {
+      if (email.toLowerCase().includes("@")) {
         return true;
       } else {
-        console.log("Please provide a valid email address.");
+        console.log(
+          "Please provide a valid email address including the @ symbol."
+        );
         return false;
       }
     },
