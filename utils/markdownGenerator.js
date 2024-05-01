@@ -1,6 +1,8 @@
+//required imports
 import fs from "fs";
 import inquirer from "inquirer";
 
+// function to generate the license badges for the readme file
 function getLicenseBadge(license) {
   let badge = "";
   switch (license) {
@@ -34,6 +36,7 @@ function getLicenseBadge(license) {
   return badge;
 }
 
+// function to generate the link for the license of the readme file
 function getLicenseLink(license) {
   let link = "";
   switch (license) {
@@ -62,6 +65,7 @@ function getLicenseLink(license) {
   return link;
 }
 
+// function to generate the license section of the readme file
 function getLicenseSection(license) {
   let licenseSection = "";
   if (license === "None") {
@@ -74,6 +78,7 @@ function getLicenseSection(license) {
   return licenseSection;
 }
 
+// function that generates the final readme.md file
 function generateMarkdown(answer) {
   const readMeContents = `
     # ${answer.title}
@@ -118,4 +123,5 @@ function generateMarkdown(answer) {
   return readMeContents;
 }
 
+// exports the file to be used in generator.js
 export default generateMarkdown;

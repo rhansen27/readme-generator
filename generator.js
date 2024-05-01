@@ -1,7 +1,9 @@
+// required imports for the program to function
 import inquirer from "inquirer";
 import fs from "fs";
 import markdownGenerator from "./utils/markdownGenerator.js";
 
+// array of the questions that are prompted for the user
 const questions = [
   {
     type: "input",
@@ -132,13 +134,15 @@ const questions = [
   },
 ];
 
+// function to generate the readme file
 function writeToFile(content) {
-  fs.writeFile("README_TEST.md", content, (err) => {
+  fs.writeFile("README.md", content, (err) => {
     if (err) throw err;
     console.log("README.md file has been created successfully!");
   });
 }
 
+// initialization function
 function init() {
   inquirer
     .prompt(questions)
@@ -152,4 +156,5 @@ function init() {
     });
 }
 
+//calls init, starts the program
 init();
