@@ -61,3 +61,15 @@ function getLicenseLink(license) {
   }
   return link;
 }
+
+function getLicenseSection(license) {
+  let licenseSection = "";
+  if (license === "None") {
+    licenseSection = "This project is not licensed.";
+  } else if (license === "Other") {
+    licenseSection = `This project is licensed under a license not listed`;
+  } else {
+    licenseSection = `This project is licensed under ${license}.`;
+  }
+  return licenseSection;
+}
