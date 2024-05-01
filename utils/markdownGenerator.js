@@ -105,17 +105,17 @@ function generateMarkdown(answer) {
     ### ${answer.contribution}
     
     ## Tests
-    ### ${answer.tests}
+    ### ${answer.testing}
     
     ## Questions
     ### If you have any questions, please contact me at ${answer.email}
     
-    ### Visit my GitHub profile: [${answer.github}](https://github.com/${
-    answer.github
+    ### Visit my GitHub profile: [${answer.username}](https://github.com/${
+    answer.username
   })
     `;
 
   return readMeContents;
 }
 
-module.exports = markdownGenerator;
+export default generateMarkdown;
