@@ -73,3 +73,49 @@ function getLicenseSection(license) {
   }
   return licenseSection;
 }
+
+function generateMarkdown(answer) {
+  const readMeContents = `
+    # ${answer.title}
+    
+    ## ${getLicenseSection(answer.license)} ${getLicenseBadge(answer.license)}
+    ### ${getLicenseLink(answer.license)}
+    
+    ## Table of Contents:
+    ### *[Installation](#installation)
+    ### *[Usage](#usage)
+    ### *[License](#license)
+    ### *[Contributing](#contributing)
+    ### *[Tests](#tests)
+    ### *[Questions](#questions)
+    
+    ## Description
+    ### ${answer.description}
+    
+    ## Installation
+    ### ${answer.installation}
+    
+    ## Usage
+    ### ${answer.use}
+    
+    ## License
+    ### ${getLicenseSection(answer.license)} ${getLicenseBadge(answer.license)}
+    
+    ## Contributing
+    ### ${answer.contribution}
+    
+    ## Tests
+    ### ${answer.tests}
+    
+    ## Questions
+    ### If you have any questions, please contact me at ${answer.email}
+    
+    ### Visit my GitHub profile: [${answer.github}](https://github.com/${
+    answer.github
+  })
+    `;
+
+  return readMeContents;
+}
+
+module.exports = generateMarkdown;
