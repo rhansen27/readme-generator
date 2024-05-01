@@ -1,5 +1,6 @@
 import inquirer from "inquirer";
 import fs from "fs";
+import markdownGenerator from "./utils/markdownGenerator.js";
 
 const questions = [
   {
@@ -131,10 +132,24 @@ const questions = [
   },
 ];
 
-function init() {
-  inquirer.prompt(questions).then((answers) => {
-    console.log(answers);
+function writeToFile(content) {
+  fs.writeFile("README_TEST.md", content, (err) => {
+    if (err) throw err;
+    console.log("README.md file has been created successfully!");
   });
+}
+
+function init() {
+  inquirer
+    .prompt(questions)
+    .then((answers) => {
+      const markdown = markdownGenerator(answers);
+      console.log(answers);
+      writeToFile(markdown);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
 init();

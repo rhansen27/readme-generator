@@ -118,4 +118,4 @@ function generateMarkdown(answer) {
   return readMeContents;
 }
 
-module.exports = generateMarkdown;
+module.exports = markdownGenerator;
