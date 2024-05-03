@@ -1,36 +1,51 @@
-    # README generator
+# README generator
 
-    ## This project is not licensed.
-    ###
+## This project is licensed under MIT. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-    ## Table of Contents:
-    ### *[Installation](#installation)
-    ### *[Usage](#usage)
-    ### *[License](#license)
-    ### *[Contributing](#contributing)
-    ### *[Tests](#tests)
-    ### *[Questions](#questions)
+### https://opensource.org/licenses/MIT
 
-    ## Description
-    ### This is a project that generates readme files for new projects
-    ### https://youtu.be/8PoYht9J6UA
+## Table of Contents:
 
-    ## Installation
-    ### by cloning the repo  from github , running the command npm i, and using node to start it
+### \*[Installation](#installation)
 
-    ## Usage
-    ### to generate readmes for new programs
+### \*[Usage](#usage)
 
-    ## License
-    ### This project is not licensed.
+### \*[License](#license)
 
-    ## Contributing
-    ### whomever is allowed to fork the repo, also they are allowed to make any changes through pull requests
+### \*[Contributing](#contributing)
 
-    ## Tests
-    ### there are no tests required for this project
+### \*[Tests](#tests)
 
-    ## Questions
-    ### If you have any questions, please contact me at rhansen26@my.wctc.edu
+### \*[Questions](#questions)
 
-    ### Visit my GitHub profile: [rhansen27](https://github.com/rhansen27)
+## Description
+
+### This is a project that allows for automated creation of README files for new projects
+
+### \*[Demonstration](https://youtu.be/8PoYht9J6UA)
+
+## Installation
+
+### clone the repo from github, run npm i to install the dependancies and start the project with node using the command node index.js
+
+## Usage
+
+### to streamline and automate the creation of README files
+
+## License
+
+### This project is licensed under MIT. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Contributing
+
+### others are allowed to propose any changes in a pull requeset
+
+## Tests
+
+### N/A
+
+## Questions
+
+### If you have any questions, please contact me at rhansen26@my.wctc.edu
+
+### Visit my GitHub profile: [rhansen27](https://github.com/rhansen27)
