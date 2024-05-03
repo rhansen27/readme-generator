@@ -81,41 +81,41 @@ function getLicenseSection(license) {
 // function that generates the final readme.md file
 function generateMarkdown(answer) {
   const readMeContents = `
-    # ${answer.title}
+  # ${answer.title}
     
-    ## ${getLicenseSection(answer.license)} ${getLicenseBadge(answer.license)}
-    ### ${getLicenseLink(answer.license)}
+  ## ${getLicenseSection(answer.license)} ${getLicenseBadge(answer.license)}
+  ### ${getLicenseLink(answer.license)}
     
-    ## Table of Contents:
-    ### *[Installation](#installation)
-    ### *[Usage](#usage)
-    ### *[License](#license)
-    ### *[Contributing](#contributing)
-    ### *[Tests](#tests)
-    ### *[Questions](#questions)
+  ## Table of Contents:
+  ### *[Installation](#installation)
+  ### *[Usage](#usage)
+  ### *[License](#license)
+  ### *[Contributing](#contributing)
+  ### *[Tests](#tests)
+  ### *[Questions](#questions)
     
-    ## Description
-    ### ${answer.description}
+  ## Description
+  ### ${answer.description}
     
-    ## Installation
-    ### ${answer.installation}
+  ## Installation
+  ### ${answer.installation}
     
-    ## Usage
-    ### ${answer.use}
+  ## Usage
+  ### ${answer.use}
     
-    ## License
-    ### ${getLicenseSection(answer.license)} ${getLicenseBadge(answer.license)}
+  ## License
+  ### ${getLicenseSection(answer.license)} ${getLicenseBadge(answer.license)}
     
-    ## Contributing
-    ### ${answer.contribution}
+  ## Contributing
+  ### ${answer.contribution}
     
-    ## Tests
-    ### ${answer.testing}
+  ## Tests
+  ### ${answer.testing}
     
-    ## Questions
-    ### If you have any questions, please contact me at ${answer.email}
+  ## Questions
+  ### If you have any questions, please contact me at ${answer.email}
     
-    ### Visit my GitHub profile: [${answer.username}](https://github.com/${
+  ### Visit my GitHub profile: [${answer.username}](https://github.com/${
     answer.username
   })
     `;
